@@ -1,9 +1,9 @@
 node {
    
-   stage('Code Checkout') { // for display purposes
+ //  stage('Code Checkout') { // for display purposes
       // Get some code from a GitHub repository
-    git credentialsId: 'Github-ID', url: 'https://github.com/InfinityVegas/wannacry.git'
-   }
+ //   git credentialsId: 'Github-ID', url: 'https://github.com/InfinityVegas/wannacry.git'
+ //  }
     stage('Compile and Build  (Maven)') { 
         steps {
                 bat "mvn clean compile"
